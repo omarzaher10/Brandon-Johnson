@@ -1,0 +1,920 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --main-color: #0563bb;
+    --sec-color: #f2f3f5;
+    --slider: #ddd
+}
+
+
+
+nav {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+
+.nav-link {
+
+    color: gray;
+
+}
+
+
+.nav-item.active {
+
+    background-color: var(--main-color) !important;
+
+}
+
+
+.nav-item.active .nav-link {
+    color: white !important;
+}
+
+
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--sec-color);
+    transition: all 0.3s;
+}
+
+
+.nav-item:hover.icon {
+    width: 6.5rem;
+}
+
+
+
+.nav-item {
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    background-color: var(--main-color);
+}
+
+
+.nav-link i {
+    transition: all 0.2s;
+}
+
+
+.nav-item:hover .nav-link i {
+
+    color: white !important;
+}
+
+
+.nav-item:hover span {
+
+    display: inline !important;
+}
+
+
+#Home {
+    background-image: url(images/hero-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.Home-layout {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+#Home .content {
+    color: #45505b;
+}
+
+
+#Home .content span::after {
+
+    content: "";
+
+    animation-name: h3-slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes h3-slider {
+
+    1% {
+        content: "D|";
+    }
+
+    3% {
+        content: "De|";
+    }
+
+    5% {
+        content: "Des|";
+    }
+
+    7% {
+        content: "Desi|";
+    }
+
+    9% {
+        content: "Desig|";
+    }
+
+    11% {
+        content: "Design|";
+    }
+
+    13% {
+        content: "Designe|";
+    }
+
+    15% {
+        content: "Designer|";
+    }
+
+    17% {
+        content: "Designe|";
+    }
+
+    19% {
+        content: "Design|";
+    }
+
+    21% {
+        content: "Desig|";
+    }
+
+    23% {
+        content: "Desi|";
+    }
+
+    25% {
+        content: "Des|";
+    }
+
+    27% {
+        content: "De|";
+    }
+
+    29% {
+        content: "Dev|";
+    }
+
+    31% {
+        content: "Deve|";
+    }
+
+    33% {
+        content: "Devel|";
+    }
+
+    35% {
+        content: "Develo|";
+    }
+
+    37% {
+        content: "Develop|";
+    }
+
+    39% {
+        content: "Develope|";
+    }
+
+    41% {
+        content: "Developer|";
+    }
+
+    43% {
+        content: "Develope|";
+    }
+
+    45% {
+        content: "Develop|";
+    }
+
+    47% {
+        content: "Develo|";
+    }
+
+    48% {
+        content: "Devel|";
+    }
+
+    49% {
+        content: "Deve|";
+    }
+
+    50% {
+        content: "Dev|";
+    }
+
+    51% {
+        content: "De|";
+    }
+
+    52% {
+        content: "D|";
+    }
+
+    53% {
+        content: "F|";
+    }
+
+    54% {
+        content: "Fr|";
+    }
+
+    55% {
+        content: "Fre|";
+    }
+
+    56% {
+        content: "Free|";
+    }
+
+    57% {
+        content: "Freel|";
+    }
+
+    58% {
+        content: "Freela|";
+    }
+
+    59% {
+        content: "Freelan|";
+    }
+
+    60% {
+        content: "Freelanc|";
+    }
+
+    61% {
+        content: "Freelance|";
+    }
+
+    62% {
+        content: "Freelancer|";
+    }
+
+    63% {
+        content: "Freelance|";
+    }
+
+    64% {
+        content: "Freelanc|";
+    }
+
+    65% {
+        content: "Freelan|";
+    }
+
+    66% {
+        content: "Freela|";
+    }
+
+    67% {
+        content: "Freel|";
+    }
+
+    68% {
+        content: "Free|";
+    }
+
+    69% {
+        content: "Fre|";
+    }
+
+    70% {
+        content: "Fr|";
+    }
+
+    71% {
+        content: "F|";
+    }
+
+    72% {
+        content: "|";
+    }
+
+    73% {
+        content: "p|";
+    }
+
+    74% {
+        content: "ph|";
+    }
+
+    75% {
+        content: "pho|";
+    }
+
+    76% {
+        content: "phot|";
+    }
+
+    77% {
+        content: "photo|";
+    }
+
+    78% {
+        content: "photog|";
+    }
+
+    79% {
+        content: "photogr|";
+    }
+
+    80% {
+        content: "photogra|";
+    }
+
+    81% {
+        content: "photograp|";
+    }
+
+    82% {
+        content: "photograph|";
+    }
+
+    83% {
+        content: "photographe|";
+    }
+
+    84% {
+        content: "photographer|";
+    }
+
+    85% {
+        content: "photographe|";
+    }
+
+    86% {
+        content: "photograph|";
+    }
+
+    87% {
+        content: "photograph|";
+    }
+
+    88% {
+        content: "photograp|";
+    }
+
+    89% {
+        content: "photogra|";
+    }
+
+    90% {
+        content: "photogr|";
+    }
+
+    91% {
+        content: "photog|";
+    }
+
+    92% {
+        content: "photo|";
+    }
+
+    93% {
+        content: "phot|";
+    }
+
+    94% {
+        content: "phot|";
+    }
+
+    95% {
+        content: "pho|";
+    }
+
+    96% {
+        content: "ph|";
+    }
+
+    97% {
+        content: "p|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+
+
+#Home .content .icon-content i {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#Home .content .icon-content i:hover {
+    color: var(--main-color);
+}
+
+
+.header h2 {
+    position: relative;
+
+}
+
+
+.header h2::before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: var(--slider);
+    position: absolute;
+    top: 130%;
+    left: calc(50% - 60px);
+}
+
+
+
+.header h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--main-color);
+    top: 130%;
+    left: calc(50% - 20px);
+    position: absolute;
+}
+
+
+.stats-icon {
+
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+
+}
+
+
+.skils-1 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-1::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+
+}
+
+
+.skils-2 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-2::after {
+
+    content: "";
+    position: absolute;
+    width: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+
+}
+
+
+
+.skils-3 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-3::after {
+
+    content: "";
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+
+}
+
+
+.skils-4 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-4::after {
+
+    content: "";
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+}
+
+
+.skils-5 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-5::after {
+
+    content: "";
+    position: absolute;
+    width: 75%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+}
+
+
+.skils-6 {
+
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--sec-color);
+    position: relative;
+}
+
+.skils-6::after {
+
+    content: "";
+    position: absolute;
+    width: 55%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+}
+
+.resume-content {
+    position: relative;
+    border-left: solid 2px var(--main-color);
+    padding: 0 0 20px 20px;
+
+}
+
+
+.resume-content::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: solid 2px var(--main-color);
+    position: absolute;
+    background-color: white;
+    left: -8.5px;
+
+}
+
+.resume-content h5 {
+    color: var(--main-color);
+}
+
+
+#Portfolio .nav-pills .nav-item:hover {
+    background-color: white !important;
+}
+
+#Portfolio .nav-item {
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+.layer {
+
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.layer::before {
+
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-top: solid 4px gray;
+    border-left: solid 4px gray;
+
+}
+
+
+.layer::after {
+
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border-right: solid 4px gray;
+    border-bottom: solid 4px gray;
+
+}
+
+
+#Portfolio .icon-layer i {
+
+    transition: all 0.5s;
+}
+
+#Portfolio .icon-layer i:hover {
+
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#Portfolio .portfolio-content:hover .layer {
+
+    opacity: 1;
+
+}
+
+
+.services-content {
+
+    background: #fff;
+    transition: all 1s;
+}
+
+
+.services-content i {
+
+    position: absolute;
+    transition: all 1s;
+
+}
+
+
+
+.services-content .iconn-1 i {
+
+    color: var(--main-color);
+}
+
+.services-content .iconn-2 i {
+
+    color: orange;
+}
+
+.services-content .iconn-3 i {
+
+    color: rgb(129, 28, 45);
+}
+
+.services-content .iconn-4 i {
+
+    color: rgb(235, 235, 89);
+}
+
+.services-content .iconn-5 i {
+
+    color: red;
+}
+
+.services-content .iconn-6 i {
+
+    color: teal;
+}
+
+
+
+
+.services-content:hover i {
+
+    color: white;
+}
+
+.services-content:hover {
+
+    border-color: #fff;
+
+}
+
+
+
+
+.iconn-1 svg path {
+
+    transition: all 1s;
+}
+
+
+.services-content:hover .iconn-1 svg path {
+    fill: var(--main-color);
+}
+
+
+
+
+
+
+.iconn-2 svg path {
+
+    transition: all 1s;
+}
+
+
+
+.services-content:hover .iconn-2 svg path {
+    fill: orange;
+}
+
+
+
+
+
+.iconn-3 svg path {
+
+    transition: all 1s;
+}
+
+
+
+.services-content:hover .iconn-3 svg path {
+    fill: rgb(129, 28, 45);
+}
+
+
+
+.iconn-4 svg path {
+
+    transition: all 1s;
+}
+
+
+
+.services-content:hover .iconn-4 svg path {
+    fill: rgb(235, 235, 89);
+}
+
+
+.iconn-5 svg path {
+
+    transition: all 1s;
+}
+
+
+
+.services-content:hover .iconn-5 svg path {
+    fill: red;
+}
+
+
+
+.iconn-6 svg path {
+
+    transition: all 1s;
+}
+
+
+
+.services-content:hover .iconn-6 svg path {
+    fill: teal;
+}
+
+
+
+.img-icon {
+
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+
+
+#Testmonial i {
+
+    color: var(--main-color);
+}
+
+
+#Testmonial .carousel-indicators button {
+
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: solid 1px var(--main-color);
+    opacity: 1 !important;
+
+}
+
+
+
+#Testmonial .carousel-indicators .none {
+
+    background-color: white;
+    transition: all 1s;
+}
+
+
+#Testmonial .carousel-indicators .active {
+
+    background-color: gray;
+    border: solid 1px gray;
+}
+
+
+
+#Testmonial .carousel-indicators .none:focus {
+
+    background-color: var(--main-color);
+
+}
+
+
+
+
+.contact-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #eef7ff;
+    ;
+    transition: all 0.5s;
+}
+
+
+
+#Contact i {
+
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+
+#Contact .contact-content:hover i {
+
+    color: white;
+}
+
+#Contact .contact-content:hover .contact-icon {
+
+    background-color: var(--main-color);
+}
